@@ -1,0 +1,18 @@
+{
+  "name": "corenode",
+  "version": "1.0.0",
+  "description": "This is sample project for Node JS core",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "dotenv -v NODE_ENV=dev -- nodemon index.js",
+    "prod": "dotenv -v NODE_ENV=prod -- nodemon index.js"
+  },
+  "author": "Rakesh Mondal",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "dotenv-cli": "^7.3.0",
+    "nodemon": "^3.0.1"
+  }
+}
