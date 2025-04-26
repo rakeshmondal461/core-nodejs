@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const readableStream = fs.createReadStream("example.txt", {
-  // encoding:'utf8',
+   //encoding:'utf8',
   highWaterMark: 4, // buffer size in bytes
 });
 
