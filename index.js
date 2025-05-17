@@ -27,7 +27,11 @@ const server = http.createServer((req, res) => {
       res.end(contactuspage);
       break;
     case "/api":
-      res.end("This is API routing");
+      const data = {
+        message: "API working",
+      };
+      res.writeHead(200, { "content-type": "application/json" });
+      res.end(JSON.stringify(data));
       break;
     default:
       res.writeHead(200, { "content-type": "text/html" });
